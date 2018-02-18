@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tasyafauzia.android.tasyafauzia_1202154307_modul2.MainActivity">
+
+
+    <TextView
+        android:id="@+id/pilihmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Pilih Menu :"
+        android:textSize="25dp" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pilihmenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:layout_weight="1">
+
+        <RadioButton
+            android:id="@+id/dinein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/takeaway"
+            android:layout_centerInParent="true"
+            android:checked="true"
+            android:text="Dine In"
+            />
+
+        <RadioButton
+            android:id="@+id/takeaway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pesan"
+            android:layout_alignLeft="@+id/dinein"
+            android:layout_alignStart="@+id/dinein"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="33dp"
+            android:text="Take Away" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/pesan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup"
+        android:layout_centerHorizontal="true"
+        android:text="Pesan Sekarang" />
+
+    <ImageView
+
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/android"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="30dp" />
+</RelativeLayout>
